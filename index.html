@@ -8,40 +8,47 @@
     <link rel="stylesheet" href="noac.css">
 </head>
 <body>
-<h1>大工用計算メモ</h1>
+<header>
+    <p class="header">大工用計算機</p>
+</header>
+<main>
 <ul>
 <li>
     <h2>筋交の長さと角度</h2>
 </li>   
 </ul>
 <h3>筋交い長さ</h3>
+<div>
     <form oninput="op1.value = Math.sqrt(Number(a.value)*Number(a.value) + Number(b.value)*Number(b.value));">
     √内法タテ
     <input type="number" name="a" value="">
-     の2乗＋ 内法ヨコ
+     の2乗<br>＋ 内法ヨコ
     <input type="number" name="b" value="">
-     の2乗＝ 
+     の2乗<br>＝ 
     <output name="op1"  style="background:#FCC;">筋交い長さ</output>
     </form>
+</div>
 <h3>
     筋交い角度
 </h3>
+<div>
 <form oninput="op1.value = (Number(c.value) / Number(d.value))*100;">
 
     内法ヨコ
-    <input type="number" name="c" value="">
+    <input type="number" name="c" value=""><br>
      ÷ 内法タテ
     <input type="number" name="d" value="">
-     ×１００＝ 
+     ×１００<br>＝ 
     <output name="op1"  style="background:#FCC;">筋交い角度</output>／１００
     </form>
+</div>
     <br>
     <ul>
         <li>
     <h2>割り付け</h2>
 </li>
 </ul>
-
+<div>
 <form oninput="op3.value =(((Number(e.value) / Number(f.value))-Math.floor(Number(e.value) / Number(f.value))+1)/2)*Number(f.value);">
    現場の総長さ
     <input type="number" name="e" value="">
@@ -52,12 +59,13 @@
     1枚目幅（使う方）
     <output name="op3"  style="background:#FCC;">0</output>
 </form>
-
+</div>
 <ul>
     <li>
         <h2>大矩</h2>
     </li>
 </ul>
+<div>
     <form oninput="op4.value = Math.sqrt(Number(g.value)*Number(g.value) + Number(h.value)*Number(h.value));">
     長辺の長さ
     <input type="number" name="g" value="">
@@ -68,6 +76,8 @@
     大矩の斜め長さ
     <output name="op4"  style="background:#FCC;">0</output>
     </form>
+</div>
+</main>
     <!--
 <br>
     <form oninput="keisan.value = a.valueAsNumber + b.valueAsNumber">
