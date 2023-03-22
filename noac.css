@@ -18,7 +18,7 @@ body{
 }
 div{
     padding:10px 20px ;
-    margin:0px 5px 0px 60px;
+    margin:0px 5px 0px 40px;
     font-weight: bold;
     color: #6091d3;/*文字色*/
     background: #FFF;
@@ -27,5 +27,5 @@ div{
 
 }
 h3{
-    margin-left: 60px;
+    margin-left: 40px;
 }
